@@ -1,6 +1,6 @@
 lines = open('2023/day2/input.txt', 'r').readlines()
 
-def set_is_possible(set: str):
+def set_is_possible(set: str) -> bool:
     init = {
         'r': 12,
         'g': 13,

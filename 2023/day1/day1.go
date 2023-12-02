@@ -14,7 +14,7 @@ func Part1() {
 	for _, ln := range lines {
 		for _, c := range ln {
 			if '0' <= c && c <= '9' {
-				res += 10 * int(c - '0')
+				res += 10 * int(c-'0')
 				break
 			}
 		}
@@ -30,24 +30,24 @@ func Part1() {
 }
 
 var numMap = map[string]int{
-	"1": 1,
-	"2": 2,
-	"3": 3,
-	"4": 4,
-	"5": 5,
-	"6": 6,
-	"7": 7,
-	"8": 8,
-	"9": 9,
-	"one": 1,
-	"two": 2,
+	"1":     1,
+	"2":     2,
+	"3":     3,
+	"4":     4,
+	"5":     5,
+	"6":     6,
+	"7":     7,
+	"8":     8,
+	"9":     9,
+	"one":   1,
+	"two":   2,
 	"three": 3,
-	"four": 4,
-	"five": 5,
-	"six": 6,
+	"four":  4,
+	"five":  5,
+	"six":   6,
 	"seven": 7,
 	"eight": 8,
-	"nine": 9,
+	"nine":  9,
 }
 
 func Part2() {
@@ -57,7 +57,7 @@ func Part2() {
 	res := 0
 	for _, ln := range lines {
 		first, last := 0, 0
-		fIdx, lIdx := len(ln) + 1, -1
+		fIdx, lIdx := len(ln)+1, -1
 		for s, v := range numMap {
 			idx := strings.Index(ln, s)
 			if idx >= 0 && idx < fIdx {
@@ -75,7 +75,7 @@ func Part2() {
 	print(res)
 }
 
-var D1Exp = helper.Export{
+var Export = helper.Export{
 	Part1: Part1,
 	Part2: Part2,
 }
