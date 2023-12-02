@@ -1,4 +1,4 @@
-lines = open('2023/day1.txt', 'r').readlines() # change this to be the path relative to the project directory
+lines = open('2023/day1/day1.txt', 'r').readlines() # change this to be the path relative to the project directory
 
 
 def part_1():
