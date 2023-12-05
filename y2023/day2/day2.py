@@ -1,4 +1,4 @@
-lines = open('2023/day2/input.txt', 'r').readlines()
+lines = open('y2023/day2/input.txt', 'r').readlines()
 
 def set_is_possible(set: str) -> bool:
     init = {

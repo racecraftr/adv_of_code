@@ -7,7 +7,7 @@ import (
 )
 
 func Part1() {
-	ct, err := os.ReadFile("2023/day1/day1.txt")
+	ct, err := os.ReadFile("y2023/day1/day1.txt")
 	helper.Check(err)
 	lines := strings.Split(string(ct), "\n")
 	res := 0

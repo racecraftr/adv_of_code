@@ -1,8 +1,8 @@
 package adv2023
 
 import (
-	"adv_of_code/2023/day1"
-	"adv_of_code/2023/day2"
+	"adv_of_code/y2023/day1"
+	"adv_of_code/y2023/day2"
 	"adv_of_code/helper"
 )
 
