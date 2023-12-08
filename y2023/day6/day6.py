@@ -28,11 +28,9 @@ how to solve part 2: the same thing
 '''
 
 
-def winning_races(total_time, record_distance):
-    root1 = ((total_time +
-              ((total_time**2 - 4*record_distance)**(1/2)))/2 - 0.05)
-    root2 = ((total_time -
-              ((total_time**2 - 4*record_distance)**(1/2)))/2 + 0.05)
+def winning_races(time: int, dist: int):
+    root1 = (time +((time**2 - 4*dist)**0.5))/2
+    root2 = (time -((time**2 - 4*dist)**0.5))/2
     return math.floor(root1)-math.ceil(root2) + 1
 
 
@@ -56,5 +54,4 @@ def part_2():
 
 
 if __name__ == '__main__':
-    part_2()
-
+    part_1()
