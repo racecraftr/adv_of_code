@@ -43,9 +43,9 @@ def part_2():
     res = 0
     for ln in lines:
         ls = get_ls(ln)
+        ls.reverse()
         history = find_history([ls])
-        first = sub_history(history)
-        print(f'{res} + {first} = {res + first}')
+        first = add_history(history)
         res += first
     print(res)
 
